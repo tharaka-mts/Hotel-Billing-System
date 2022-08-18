@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="bcpkix-jdk15on-1.70">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Library/kernel/bcpkix-jdk15on-1.70.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Library/kernel/bcprov-jdk15on-1.70.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Library/kernel/bcutil-jdk15on-1.70.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Library/kernel/commons-7.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Library/kernel/io-7.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Library/kernel/kernel-7.2.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Library/kernel/slf4j-api-1.7.36.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
