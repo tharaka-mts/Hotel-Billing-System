@@ -1,0 +1,197 @@
+.background {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    rgb(0, 102, 120),
+    rgb(0, 38, 91)
+  );
+}
+
+.admin-bg {
+  -fx-background-color: linear-gradient(
+    to bottom right,
+    rgb(58, 154, 206),
+    rgb(46, 39, 122)
+  );
+}
+
+.admin-btn {
+  -fx-background-color: rgb(31, 149, 188);
+  -fx-font-size: 17px;
+  -fx-background-radius: 6px;
+  -fx-pref-height: 40px;
+
+  -fx-text-fill: rgb(255, 255, 255);
+  -fx-effect: dropshadow(gaussian, rgba(0, 161, 173, 0.451), 40, 0.05, 0, 10);
+
+  -fx-font-family: Arial;
+  -fx-font-weight: regular;
+}
+
+.admin-btn:hover {
+  -fx-background-color: rgb(27, 176, 226);
+
+  -fx-font-size: 17.5px;
+  -fx-text-fill: rgb(255, 255, 255);
+}
+
+.btn {
+  -fx-background-color: rgb(66, 172, 239);
+  -fx-font-size: 17px;
+  -fx-background-radius: 6px;
+  -fx-pref-height: 40px;
+
+  -fx-text-fill: rgb(255, 255, 255);
+  -fx-effect: dropshadow(gaussian, rgba(0, 198, 233, 0.506), 40, 0.05, 0, 10);
+
+  -fx-font-family: Arial;
+  -fx-font-weight: regular;
+}
+
+.btn:hover {
+  -fx-background-color: rgb(103, 176, 250);
+
+  -fx-font-size: 17.5px;
+  -fx-text-fill: rgb(255, 255, 255);
+}
+
+.fac-btn {
+  -fx-background-color: rgb(59, 169, 110);
+  -fx-font-size: 17px;
+  -fx-background-radius: 6px;
+  -fx-pref-height: 40px;
+
+  -fx-text-fill: rgb(255, 255, 255);
+  -fx-effect: dropshadow(gaussian, rgba(33, 183, 0, 0.496), 40, 0.05, 0, 10);
+
+  -fx-font-family: Arial;
+  -fx-font-weight: regular;
+}
+
+.fac-btn:hover {
+  -fx-background-color: rgb(22, 167, 126);
+
+  -fx-font-size: 17.5px;
+  -fx-text-fill: rgb(255, 255, 255);
+}
+
+.blur-objects {
+  -fx-opacity: 10%;
+}
+
+.view {
+  -fx-background-color: rgb(31, 142, 201);
+}
+
+.view-dark {
+  -fx-background-color: rgb(0, 90, 117);
+}
+
+.tx-fld {
+  -fx-pref-height: 30;
+}
+
+.selection-btn-hotel {
+  -fx-background-image: url("../hotel.jpeg");
+  -fx-background-size: 640 427;
+  -fx-background-position: center center;
+  -fx-background-repeat: stretch;
+
+  -fx-border-color: rgb(66, 172, 239);
+  -fx-border-width: 2px;
+  -fx-opacity: 50%;
+}
+
+.selection-btn-restaurant {
+  -fx-background-image: url("../restaurant.jpg");
+  -fx-background-size: 600 450;
+  -fx-background-position: center center;
+  -fx-background-repeat: stretch;
+
+  -fx-border-color: rgb(66, 172, 239);
+  -fx-border-width: 2px;
+  -fx-opacity: 50%;
+}
+
+.selection-btn-restaurant:hover {
+  -fx-opacity: 60%;
+}
+
+.selection-btn-hotel:hover {
+  -fx-opacity: 60%;
+}
+
+.bill-detail {
+  -fx-background-image: url("../invoice.jpeg");
+  -fx-background-size: 400 400;
+  -fx-background-position: center center;
+  -fx-background-repeat: stretch;
+  -fx-opacity: 30%;
+
+  -fx-border-color: rgb(0, 234, 255);
+  -fx-border-width: 3px;
+
+  -fx-font-family: Arial;
+  -fx-font-size: 55px;
+  -fx-text-fill: rgb(0, 0, 0);
+  -fx-text-weight: bold;
+}
+
+.bill-detail:hover {
+    -fx-opacity: 50%;
+}
+
+.view-bill {
+  -fx-background-image: url("../view-invoice.jpg");
+  -fx-background-size: 400 400;
+  -fx-background-position: center center;
+  -fx-background-repeat: stretch;
+  -fx-opacity: 40%;
+
+  -fx-border-color: rgb(0, 234, 255);
+  -fx-border-width: 3px;
+
+  -fx-font-family: Arial;
+  -fx-font-size: 55px;
+  -fx-text-fill: rgb(4, 4, 4);
+  -fx-text-weight: bold;
+}
+
+.view-bill:hover {
+    -fx-opacity: 50%;
+}
+
+.login-img {
+  -fx-background-image: url("../login.png");
+  -fx-background-size: 768 546;
+  -fx-background-position: center center;
+  -fx-background-repeat: stretch;
+}
+
+.lg-btn {
+  -fx-background-color: rgb(66, 172, 239);
+
+  -fx-background-radius: 6px;
+  -fx-pref-height: 80px;
+
+  -fx-text-fill: rgb(255, 255, 255);
+  -fx-effect: dropshadow(gaussian, rgba(0, 161, 173, 0.451), 40, 0.05, 0, 10);
+
+  -fx-font-family: Arial;
+  -fx-font-weight: regular;
+  -fx-font-size: 26px;
+}
+
+.lg-btn:hover {
+  -fx-background-color: rgb(103, 176, 250);
+
+  -fx-font-size: 27px;
+  -fx-text-fill: rgb(255, 255, 255);
+}
+
+.bg-img {
+  -fx-background-image: url("../bg.jpeg");
+  -fx-background-size: 1440 827;
+  -fx-background-position: center center;
+  -fx-background-repeat: stretch;
+  -fx-opacity: 25%;
+}
