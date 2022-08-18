@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1250.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rad_project.GuestReceipt">
+   <children>
+      <Text fill="WHITE" layoutX="120.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guest Name">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="688.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="120.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrival Date">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="120.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No of Rooms">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="688.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Departure Date" wrappingWidth="122.892578125">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="120.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Information" wrappingWidth="92.703125">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Button layoutX="100.0" layoutY="650.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="110.0" styleClass="btn" stylesheets="@styles.css" text="Back" textFill="WHITE" />
+      <Label fx:id="output" layoutX="494.0" layoutY="40.0" prefHeight="18.0" prefWidth="78.0" />
+      <Label fx:id="guestName" layoutX="263.0" layoutY="190.0" prefHeight="25.0" prefWidth="280.0" style="-fx-background-color: #fff;" styleClass="tx-fld">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="email" layoutX="840.0" layoutY="190.0" prefHeight="25.0" prefWidth="280.0" style="-fx-background-color: #fff;" styleClass="tx-fld">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="arrivaleDate" layoutX="263.0" layoutY="240.0" prefHeight="25.0" prefWidth="280.0" style="-fx-background-color: #fff;" styleClass="tx-fld">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="info" layoutX="263.0" layoutY="340.0" prefHeight="51.0" prefWidth="280.0" style="-fx-background-color: #fff;">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="departureDate" layoutX="840.0" layoutY="240.0" prefHeight="25.0" prefWidth="280.0" style="-fx-background-color: #fff;" styleClass="tx-fld">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="numOfRooms" layoutX="263.0" layoutY="290.0" prefHeight="25.0" prefWidth="280.0" style="-fx-background-color: #fff;" styleClass="tx-fld">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="120.0" layoutY="449.0" prefHeight="26.0" prefWidth="142.0" text="Total bill amount :" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="120.0" layoutY="510.0" prefHeight="17.0" prefWidth="91.0" text="Cash given :" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label layoutX="987.0" layoutY="65.0" text="Thank You!" textFill="WHITE">
+         <font>
+            <Font name="Georgia" size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="440.0" layoutY="499.0" mnemonicParsing="false" onAction="#balButton" prefHeight="30.0" prefWidth="93.0" styleClass="admin-btn" text="Balance" textFill="WHITE">
+         <font>
+            <Font size="10.0" />
+         </font></Button>
+      <TextField fx:id="cashGiven" layoutX="264.0" layoutY="508.0" prefHeight="25.0" prefWidth="70.0">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <Label fx:id="bal" layoutX="554.0" layoutY="504.0" prefHeight="30.0" prefWidth="89.0" style="-fx-background-color: #fff;">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label fx:id="invoice" alignment="CENTER_RIGHT" layoutX="929.0" layoutY="124.0" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: #fff;">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="1044.0" layoutY="125.0" text="Invoice No" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="1020.0" layoutY="642.0" mnemonicParsing="false" onAction="#print" prefWidth="155.0" styleClass="btn" stylesheets="@styles.css" text="Print Recept" textFill="WHITE" />
+      <ImageView fitHeight="72.0" fitWidth="80.0" layoutX="100.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="185.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Luxury Hotel" wrappingWidth="233.9296875">
+         <font>
+            <Font name="Georgia" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="185.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Guest Bill">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="totalBill" layoutX="264.0" layoutY="447.0" prefHeight="31.0" prefWidth="70.0" style="-fx-background-color: #fff;" styleClass="tx-fld">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

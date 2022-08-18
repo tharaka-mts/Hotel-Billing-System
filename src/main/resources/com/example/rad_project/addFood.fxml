@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1250.0" styleClass="admin-bg" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rad_project.addFood">
+   <children>
+      <TextField fx:id="searchBar" layoutX="90.0" layoutY="130.0" onAction="#search" prefHeight="40.0" prefWidth="453.0" promptText="Search the items" style="-fx-background-color: white;" styleClass="font" />
+      <Button fx:id="search" layoutX="543.0" layoutY="130.0" minHeight="0.0" mnemonicParsing="false" onAction="#search" prefHeight="40.0" prefWidth="115.0" styleClass="btn" stylesheets="@styles.css" text="Search" textFill="WHITE" />
+      <Button fx:id="add" layoutX="685.0" layoutY="130.0" mnemonicParsing="false" onAction="#add" prefHeight="40.0" prefWidth="115.0" styleClass="btn" stylesheets="@styles.css" text="Add" textFill="WHITE" />
+      <TableView fx:id="table" layoutX="90.0" layoutY="217.0" prefHeight="330.0" prefWidth="1070.0">
+        <columns>
+          <TableColumn fx:id="iName" prefWidth="620.5" text="                      Food Name" />
+          <TableColumn fx:id="fPrice" minWidth="0.0" prefWidth="448.5" text="         Food Price" />
+        </columns>
+      </TableView>
+      <TextField fx:id="fName" layoutX="230.0" layoutY="574.0" prefHeight="30.0" prefWidth="320.0" style="-fx-background-color: white;" />
+      <TextField fx:id="price" layoutX="840.0" layoutY="573.0" prefHeight="30.0" prefWidth="320.0" style="-fx-background-color: white;" />
+      <ListView fx:id="listView" layoutX="91.0" layoutY="171.0" prefHeight="46.0" prefWidth="447.0" styleClass="view" stylesheets="@styles.css" />
+      <Text fill="WHITE" layoutX="92.0" layoutY="595.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Name :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="696.0" layoutY="595.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Food Price :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Button fx:id="save" layoutX="716.0" layoutY="650.0" mnemonicParsing="false" onAction="#update" prefHeight="40.0" prefWidth="115.0" styleClass="btn" stylesheets="@styles.css" text="Update" textFill="WHITE" />
+      <Button fx:id="delete" layoutX="1041.0" layoutY="650.0" mnemonicParsing="false" onAction="#delete" prefHeight="40.0" prefWidth="115.0" styleClass="btn" stylesheets="@styles.css" text="Delete" textFill="WHITE" />
+      <Button fx:id="rest" layoutX="879.0" layoutY="650.0" mnemonicParsing="false" onAction="#reset" prefHeight="40.0" prefWidth="115.0" styleClass="btn" stylesheets="@styles.css" text="Reset" textFill="WHITE" />
+      <Button fx:id="insert" layoutX="551.0" layoutY="650.0" mnemonicParsing="false" onAction="#insert" prefHeight="40.0" prefWidth="115.0" styleClass="btn" stylesheets="@styles.css" text="Insert" textFill="WHITE" />
+      <Button fx:id="insert1" layoutX="90.0" layoutY="650.0" mnemonicParsing="false" onAction="#back" prefHeight="40.0" prefWidth="100.0" styleClass="btn" stylesheets="@styles.css" text="Back" textFill="WHITE" />
+      <ImageView fitHeight="72.0" fitWidth="80.0" layoutX="75.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="162.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Luxury Hotel" wrappingWidth="233.9296875">
+         <font>
+            <Font name="Georgia" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="162.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Food Items ">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

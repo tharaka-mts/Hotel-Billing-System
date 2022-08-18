@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="scenePane" prefHeight="750.0" prefWidth="1250.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rad_project.Login">
+   <children>
+      <TextField fx:id="password2" layoutX="732.0" layoutY="456.0" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: white;" />
+      <Text fill="WHITE" layoutX="732.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="732.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="username" layoutX="732.0" layoutY="351.0" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: white;" />
+      <PasswordField fx:id="password" layoutX="732.0" layoutY="456.0" prefHeight="30.0" prefWidth="350.0" style="-fx-background-color: white;" />
+      <Text fill="WHITE" layoutX="773.0" layoutY="238.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Luxury Hotel" textAlignment="CENTER" wrappingWidth="233.9296875">
+         <font>
+            <Font name="Georgia" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="login" layoutX="732.0" layoutY="532.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="30.0" prefWidth="151.0" styleClass="admin-btn" text="Login " />
+      <ImageView fitHeight="151.0" fitWidth="130.0" layoutX="818.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="closeTab" layoutX="931.0" layoutY="532.0" mnemonicParsing="false" onAction="#reset" prefHeight="30.0" prefWidth="151.0" styleClass="admin-btn" text="Reset" />
+      <Pane layoutX="53.0" layoutY="101.0" prefHeight="549.0" prefWidth="572.0" styleClass="login-img" />
+      <ImageView fx:id="imageView" fitHeight="26.0" fitWidth="40.0" layoutX="1042.0" layoutY="466.0" onMousePressed="#show" onMouseReleased="#hide" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../hide.png" />
+         </image>
+         <viewport>
+            <Rectangle2D minX="705.0" minY="409.0" width="40.0" />
+         </viewport>
+      </ImageView>
+   </children>
+</Pane>

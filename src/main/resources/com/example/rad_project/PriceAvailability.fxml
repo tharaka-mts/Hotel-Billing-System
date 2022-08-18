@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1250.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rad_project.PriceAvailability">
+   <children>
+      <ButtonBar layoutX="549.0" layoutY="46.0" prefHeight="40.0" prefWidth="430.0" />
+      <TextField fx:id="search" layoutX="100.0" layoutY="183.0" prefHeight="40.0" prefWidth="320.0" promptText="Search using Roomtype" style="-fx-background-color: white;" />
+      <Button layoutX="100.0" layoutY="650.0" mnemonicParsing="false" onAction="#back" prefHeight="25.0" prefWidth="110.0" styleClass="btn" text="Back" textFill="WHITE" />
+      <Button layoutX="431.0" layoutY="183.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="126.0" styleClass="admin-btn" text="Search" textFill="WHITE" />
+      <Text fill="WHITE" layoutX="134.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Single">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="131.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="133.0" layoutY="505.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Family">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="271.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Per Night" textAlignment="CENTER" wrappingWidth="125.99999999999994">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="449.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="With Breakfast" textAlignment="CENTER" wrappingWidth="125.99999999999994">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="613.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Half Board" textAlignment="CENTER" wrappingWidth="125.99999999999994">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="783.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Board" textAlignment="CENTER" wrappingWidth="125.99999999999994">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="951.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Availability" textAlignment="CENTER" wrappingWidth="125.99999999999989">
+         <font>
+            <Font size="16.0" />
+         </font></Text>
+      <Label fx:id="sPerNight" layoutX="271.0" layoutY="391.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="dPerNight" layoutX="271.0" layoutY="436.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="fPerNight" layoutX="271.0" layoutY="486.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="sBreakfast" layoutX="437.0" layoutY="391.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="dBreakfast" layoutX="437.0" layoutY="438.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="fBreakfast" layoutX="437.0" layoutY="486.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="sHBoard" layoutX="601.0" layoutY="391.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="dHBoard" layoutX="601.0" layoutY="438.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="fHBoard" layoutX="601.0" layoutY="486.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="sFBoard" layoutX="771.0" layoutY="391.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="dFBoard" layoutX="771.0" layoutY="438.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="fFBoard" layoutX="771.0" layoutY="486.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="sAvailability" layoutX="939.0" layoutY="391.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="dAvailability" layoutX="939.0" layoutY="438.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Label fx:id="fAvailability" layoutX="939.0" layoutY="486.0" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #fff;" />
+      <Button layoutX="691.0" layoutY="183.0" mnemonicParsing="false" onAction="#classic" prefWidth="126.0" styleClass="fac-btn" text="Classic" />
+      <Button layoutX="827.0" layoutY="183.0" mnemonicParsing="false" onAction="#deluxe" prefWidth="126.0" styleClass="fac-btn" text="Deluxe" />
+      <Button layoutX="963.0" layoutY="183.0" mnemonicParsing="false" onAction="#presidential" prefWidth="126.0" styleClass="fac-btn" text="Presidential" />
+      <Button layoutX="970.0" layoutY="650.0" mnemonicParsing="false" onAction="#registration" prefHeight="25.0" prefWidth="200.0" styleClass="btn" text="Guest Registration" textFill="WHITE" />
+      <Button layoutX="707.0" layoutY="650.0" mnemonicParsing="false" onAction="#availability" prefHeight="25.0" prefWidth="220.0" styleClass="btn" text="Price and Availability" textFill="WHITE" />
+      <ImageView fitHeight="72.0" fitWidth="80.0" layoutX="100.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="185.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Luxury Hotel" wrappingWidth="233.9296875">
+         <font>
+            <Font name="Georgia" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="185.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price and Availability">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
