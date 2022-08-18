@@ -5,7 +5,7 @@ Add all libraries. And run the program.
 
 To download javafx-sdk - https://gluonhq.com/products/javafx/
 
-Change (.)idea files to .idea othervise project will not open.
+Rename (.)idea folder as .idea otherwise project will not open.
 
 /** For Admin login (can view from database) **/
 username - Admin
