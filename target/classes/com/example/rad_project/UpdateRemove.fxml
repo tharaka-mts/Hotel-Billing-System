@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1250.0" styleClass="admin-bg" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rad_project.UpdateRemove">
+   <children>
+      <Text fill="WHITE" layoutX="718.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date of Birth">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="718.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIC">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="718.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="70.76416015625">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <TextField fx:id="password" layoutX="283.0" layoutY="326.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: white;" styleClass="tx-fld" />
+      <TextField fx:id="lastname" layoutX="283.0" layoutY="425.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: white;" styleClass="tx-fld" />
+      <Text fill="WHITE" layoutX="718.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="86.162109375">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="718.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone No">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <TextField fx:id="username" layoutX="284.0" layoutY="269.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: white;" styleClass="tx-fld" />
+      <TextField fx:id="firstname" layoutX="283.0" layoutY="376.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: white;" styleClass="tx-fld" />
+      <TextField fx:id="address" layoutX="283.0" layoutY="480.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: white;" styleClass="tx-fld" />
+      <TextField fx:id="dob" layoutX="843.0" layoutY="324.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: white;" styleClass="tx-fld" />
+      <TextField fx:id="email" layoutX="843.0" layoutY="269.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: white;" styleClass="tx-fld" />
+      <TextField fx:id="nic" layoutX="843.0" layoutY="375.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: white;" styleClass="tx-fld" />
+      <TextField fx:id="phone" layoutX="843.0" layoutY="480.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: white;" styleClass="tx-fld" />
+      <TextField fx:id="gender" layoutX="843.0" layoutY="427.0" prefHeight="25.0" prefWidth="250.0" style="-fx-background-color: white;" styleClass="tx-fld" />
+      <Text fill="WHITE" layoutX="158.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="158.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="158.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="158.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Name" wrappingWidth="86.162109375">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="158.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <Button layoutX="775.0" layoutY="558.0" mnemonicParsing="false" onAction="#update" prefHeight="30.0" prefWidth="150.0" styleClass="admin-btn" text="Update" textFill="WHITE" />
+      <Button layoutX="943.0" layoutY="557.0" mnemonicParsing="false" onAction="#remove" prefHeight="31.0" prefWidth="150.0" styleClass="admin-btn" text="Remove" textFill="WHITE" />
+      <ButtonBar layoutX="291.0" layoutY="586.0" prefHeight="40.0" />
+      <Text fill="WHITE" layoutX="75.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search Cashier by username :" wrappingWidth="225.99999999999994">
+         <font>
+            <Font size="17.0" />
+         </font></Text>
+      <TextField fx:id="searchCashier" layoutX="309.0" layoutY="163.0" prefHeight="40.0" prefWidth="320.0" style="-fx-background-color: white;" />
+      <Label fx:id="output" layoutX="370.0" layoutY="69.0" prefHeight="21.0" prefWidth="169.0">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Button layoutX="651.0" layoutY="163.0" mnemonicParsing="false" onAction="#search" prefHeight="28.0" prefWidth="150.0" styleClass="admin-btn" text="Search" textFill="WHITE" />
+      <Button layoutX="75.0" layoutY="650.0" mnemonicParsing="false" onAction="#close" prefHeight="40.0" prefWidth="100.0" styleClass="btn" text="Back" textFill="WHITE" />
+      <Button layoutX="858.0" layoutY="650.0" mnemonicParsing="false" onAction="#updateRemoveCashier" prefHeight="40.0" prefWidth="290.0" styleClass="btn" text="Update or Remove Cashier" textFill="WHITE" />
+      <Button layoutX="616.0" layoutY="650.0" mnemonicParsing="false" onAction="#registerCashier" prefHeight="40.0" prefWidth="175.0" styleClass="btn" text="Register Cashier" textFill="WHITE" />
+      <Button layoutX="389.0" layoutY="650.0" mnemonicParsing="false" onAction="#adminDetails" prefHeight="40.0" prefWidth="150.0" styleClass="btn" text="Admin Details" textFill="WHITE" />
+      <ImageView fitHeight="72.0" fitWidth="80.0" layoutX="75.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="162.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Luxury Hotel" wrappingWidth="233.9296875">
+         <font>
+            <Font name="Georgia" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="162.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update or Remove Cashiers">
+         <font>
+            <Font name="Times New Roman" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
