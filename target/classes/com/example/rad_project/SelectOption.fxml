@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1250.0" styleClass="admin-bg" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.rad_project.SelectOption">
+   <children>
+      <Region prefHeight="751.0" prefWidth="1250.0" styleClass="bg-img" stylesheets="@styles.css" />
+      <ImageView fitHeight="137.0" fitWidth="138.0" layoutX="258.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="469.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Luxury Hotel" textAlignment="CENTER" wrappingWidth="438.9296875">
+         <font>
+            <Font name="Georgia" size="55.0" />
+         </font>
+      </Text>
+      <Button layoutX="395.0" layoutY="289.0" mnemonicParsing="false" onAction="#adminDetail" prefHeight="65.0" prefWidth="460.0" styleClass="lg-btn" text="Admin and Cashier Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <Button layoutX="395.0" layoutY="423.0" mnemonicParsing="false" onAction="#hotel" prefHeight="77.0" prefWidth="210.0" styleClass="lg-btn" text="Hotel" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <Button layoutX="641.0" layoutY="423.0" mnemonicParsing="false" onAction="#resturent" prefHeight="77.0" prefWidth="210.0" styleClass="lg-btn" text="Restaurant" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Button>
+      <Button fx:id="close" layoutX="491.0" layoutY="600.0" mnemonicParsing="false" onAction="#back" prefHeight="37.0" prefWidth="264.0" styleClass="btn" text="Back to the Login" textFill="WHITE" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
